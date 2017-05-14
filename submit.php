@@ -3,12 +3,13 @@
 
 	if($socket =@ fsockopen($host, 80, $errno, $errstr, 30)) {
 		$value = 1 ;
-		fclose($socket);
 	} 
 	else 
 	{
 		$value = 0 ;
 	}
+
+	fclose($socket);
 ?>
 
 <!DOCTYPE html>
